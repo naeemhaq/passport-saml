@@ -21,6 +21,6 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/lib/passport-saml/'
+    targetPath: '$(Pipeline.Workspace)'
     artifact: 'passport-saml'
     publishLocation: 'pipeline'
