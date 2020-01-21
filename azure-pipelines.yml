@@ -17,11 +17,10 @@ steps:
 
 - script: |
     npm install
-    npm run build
   displayName: 'npm install and build'
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)'
+    targetPath: '$(Pipeline.Workspace)/lib/passport-saml/'
     artifact: 'passport-saml'
     publishLocation: 'pipeline'
